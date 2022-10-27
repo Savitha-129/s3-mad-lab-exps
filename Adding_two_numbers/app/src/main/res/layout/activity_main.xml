@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tv2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="102dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        tools:layout_editor_absoluteX="177dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="87dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/ans"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="75dp"
+        android:text=""
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/ans"
+        tools:layout_editor_absoluteX="177dp" />
+
+    <EditText
+        android:id="@+id/ans"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bu1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="95dp"
+        android:gravity="center"
+        android:hint="Enter the sum"
+        app:layout_constraintBottom_toTopOf="@+id/bu1"
+        tools:layout_editor_absoluteX="184dp" />
+
+    <Button
+        android:id="@+id/bu1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="144dp"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="675dp"
+        android:text="Click"/>
+</RelativeLayout>
